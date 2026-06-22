@@ -74,7 +74,7 @@ public final class HTTPClient: Sendable {
     ///   - decoder: The JSONDecoder to use for decoding the response.
     /// - Returns: The decoded response object.
     /// - Throws: `NetworkError.decodingFailed` if decoding fails, or other `NetworkError` types.
-    public func sendDecodable<T: Decodable & Sendable>(
+    public func sendDecodable<T: Decodable>(
         _ request: URLRequest,
         options: RequestOptions = RequestOptions(),
         decoder: JSONDecoder = JSONDecoder()
