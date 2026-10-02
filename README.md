@@ -96,6 +96,29 @@ However, for most application code, using `Endpoint` is recommended.
 
 ---
 
+## Example Project
+
+Want to see NetFlow used in a real SwiftUI application?
+
+Check out the **[ItunesTopSongs](https://github.com/vinodh06/ItunesTopSongs)** example project.
+
+It demonstrates how to use NetFlow with Apple's iTunes Top Songs RSS API, including:
+
+* Defining a type-safe `Endpoint`
+* Using `HTTPClient` with Swift Concurrency
+* Decoding API responses into strongly typed models
+* Displaying the results in SwiftUI
+* Testing network requests with `URLProtocol`
+* Using mocked responses for SwiftUI previews
+
+### ItunesTopSongs
+
+**Repository:** https://github.com/vinodh06/ItunesTopSongs
+
+The project provides a practical example of how the pieces of NetFlow fit together in a real iOS application.
+
+---
+
 # Endpoints
 
 The `Endpoint` protocol provides a type-safe way to describe an API request and its expected response.
