@@ -71,7 +71,7 @@ import Foundation
 /// ```
 public protocol Endpoint: Sendable {
     /// The type of the expected response.
-    associatedtype Response: Decodable & Sendable
+    associatedtype Response: Codable & Sendable
 
     /// The base URL for the API.
     var baseURL: URL { get }
